@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Waypoint Selector</title>
+    <link rel="stylesheet" href="wavy.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBsHiVQP-LoPUsQ17vn_HQ3dSUHI1-xPg&callback=initMap" async defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>Select Waypoints on the Map</h3>
+    <div id="map"></div>
+    <div id="controls">
+        <button id="drawPathButton">Draw Path</button>
+        <button id="sendCoordinatesButton">Send Coordinates</button>
+        <button1 id="viewWaypointsButton">View Waypoints</button1>
+    </div>
+
+    <div id="waypointsModal" class="modal">
+        <h2 style="color: purple;">Waypoints</h2>
+        <ul id="waypoint-list" class="waypoint-list"></ul> <!-- This will hold the waypoints -->
+        <button2 id="closeModal">Close</button2>
+        </div>
+    </div>
+</body>
+</html>
